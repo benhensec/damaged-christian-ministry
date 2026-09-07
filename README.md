@@ -17,6 +17,13 @@ npm run dev
 
 ## GitHub Pages
 
-Live site: https://benhensec.github.io/damaged-christian-ministry/
+Live URL (after Pages is switched on): https://benhensec.github.io/damaged-christian-ministry/
 
-Push to `main` deploys automatically. The repo is public so Pages can serve it.
+A GitHub Action on `main` builds the static site and publishes the `gh-pages` branch.
+
+Turn Pages on once:
+
+1. Open https://github.com/benhensec/damaged-christian-ministry/settings/pages
+2. **Source:** Deploy from a branch
+3. **Branch:** `gh-pages` / `/ (root)`
+4. Save
