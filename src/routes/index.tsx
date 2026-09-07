@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ministry/page-hero";
 import { Kicker, Section, SectionTitle } from "@/components/ministry/section";
 import { Button } from "@/components/ui/button";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -135,7 +136,7 @@ function Home() {
               className="flex gap-4 rounded-xl bg-surface p-4 shadow-[var(--shadow-border)]"
             >
               <img
-                src="/images/podcast-cover.jpg"
+                src={asset("/images/podcast-cover.jpg")}
                 alt=""
                 className="size-20 rounded-md object-cover"
                 crossOrigin="anonymous"
@@ -169,7 +170,7 @@ function Home() {
 
       <section className="relative overflow-hidden">
         <img
-          src="/images/damaged-circle.jpg"
+          src={asset("/images/damaged-circle.jpg")}
           alt=""
           className="absolute inset-0 size-full object-cover"
           crossOrigin="anonymous"

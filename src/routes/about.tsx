@@ -3,6 +3,7 @@ import { PageHero } from "@/components/ministry/page-hero";
 import { Kicker, Section, SectionTitle } from "@/components/ministry/section";
 import { Button } from "@/components/ui/button";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/about")({ component: AboutPage });
 
@@ -11,7 +12,7 @@ function AboutPage() {
     <>
       <PageHero
         compact
-        image="/images/damaged-water.jpg"
+        image={asset("/images/damaged-water.jpg")}
         kicker="About"
         title="A table, not a brand."
         body={damaged.mission}

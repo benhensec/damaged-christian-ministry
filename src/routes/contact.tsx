@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/ministry/contact-form";
 import { PageHero } from "@/components/ministry/page-hero";
 import { Section } from "@/components/ministry/section";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/contact")({ component: ContactPage });
 
@@ -11,7 +12,7 @@ function ContactPage() {
     <>
       <PageHero
         compact
-        image="/images/damaged-journal.jpg"
+        image={asset("/images/damaged-journal.jpg")}
         kicker="Contact"
         title="Write. We read it."
         body={`${damaged.location}. ${damaged.email}`}

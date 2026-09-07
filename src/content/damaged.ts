@@ -1,4 +1,5 @@
 import type { SiteContent } from "./types";
+import { withPublicBase } from "@/lib/asset";
 
 const m1 = `You already know the title is not a marketing line. You have the nights to prove it. The diagnosis. The betrayal. The church meeting that left you smaller than when you walked in. The quiet, ordinary damage nobody put on a prayer chain because it did not look spiritual enough.
 
@@ -76,7 +77,7 @@ If you cannot find that room yet, start with a table. Two or three. Scripture. S
 
 You do not have to pretend you were never damaged. You only have to stop believing that damage gets the last word. It does not. He does. And He is not done.`;
 
-export const damaged: SiteContent = {
+export const damaged: SiteContent = withPublicBase({
   id: "damaged",
   name: "Damaged Christian Ministry",
   shortName: "Damaged",
@@ -455,4 +456,4 @@ Pray the first four verses until they bore you. Boredom in prayer is sometimes t
     to: "https://www.princeofpeacelutheran.com",
     hint: "Our sister parish on Amelia Island — Sunday worship, Holy Communion, and a place to belong in person.",
   },
-};
+});

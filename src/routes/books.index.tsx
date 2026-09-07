@@ -3,6 +3,7 @@ import { BookCard } from "@/components/ministry/media-card";
 import { PageHero } from "@/components/ministry/page-hero";
 import { Section } from "@/components/ministry/section";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/books/")({ component: BooksIndex });
 
@@ -11,7 +12,7 @@ function BooksIndex() {
     <>
       <PageHero
         compact
-        image="/images/book-unbroken.jpg"
+        image={asset("/images/book-unbroken.jpg")}
         kicker="Books"
         title="Short books. Heavy sentences."
         body="Written to be finished. Meant to be underlined. Not a platform — a companion for the weeks you almost quit."

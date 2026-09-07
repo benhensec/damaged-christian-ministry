@@ -14,3 +14,9 @@ Edit [`src/content/damaged.ts`](src/content/damaged.ts).
 npm install
 npm run dev
 ```
+
+## GitHub Pages
+
+Live site: https://benhensec.github.io/damaged-christian-ministry/
+
+Push to `main` deploys automatically. The repo is public so Pages can serve it.

@@ -4,6 +4,7 @@ import { Section } from "@/components/ministry/section";
 import { Badge } from "@/components/ui/badge";
 import { damaged } from "@/content/damaged";
 import { formatDate } from "@/lib/utils";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/podcast/")({ component: PodcastIndex });
 
@@ -12,7 +13,7 @@ function PodcastIndex() {
     <>
       <PageHero
         compact
-        image="/images/podcast-cover.jpg"
+        image={asset("/images/podcast-cover.jpg")}
         kicker="Podcast"
         title="The Damaged Table"
         body="Weekly conversations for people who still want Jesus and are finished performing. Play any episode here — your phone will read it aloud."
@@ -27,7 +28,7 @@ function PodcastIndex() {
                 className="flex flex-col gap-3 rounded-xl bg-surface p-5 shadow-[var(--shadow-border)] sm:flex-row sm:items-center"
               >
                 <img
-                  src="/images/podcast-cover.jpg"
+                  src={asset("/images/podcast-cover.jpg")}
                   alt=""
                   className="size-24 rounded-md object-cover"
                   crossOrigin="anonymous"

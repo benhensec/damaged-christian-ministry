@@ -3,6 +3,7 @@ import { MediaCard } from "@/components/ministry/media-card";
 import { PageHero } from "@/components/ministry/page-hero";
 import { Section } from "@/components/ministry/section";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/watch/")({ component: WatchIndex });
 
@@ -11,7 +12,7 @@ function WatchIndex() {
     <>
       <PageHero
         compact
-        image="/images/damaged-journal.jpg"
+        image={asset("/images/damaged-journal.jpg")}
         kicker="YouTube · Not Destroyed"
         title="Watch the messages."
         body="Premiere on the channel. Stay and read here. Use Listen to hear each teaching read aloud on your phone."

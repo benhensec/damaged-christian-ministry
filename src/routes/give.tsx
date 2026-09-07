@@ -3,6 +3,7 @@ import { PageHero } from "@/components/ministry/page-hero";
 import { Section } from "@/components/ministry/section";
 import { Button } from "@/components/ui/button";
 import { damaged } from "@/content/damaged";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/give")({ component: GivePage });
 
@@ -11,7 +12,7 @@ function GivePage() {
     <>
       <PageHero
         compact
-        image="/images/damaged-water.jpg"
+        image={asset("/images/damaged-water.jpg")}
         kicker="Give"
         title="Keep the table set."
         body={damaged.givingNote}

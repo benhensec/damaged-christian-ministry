@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ministry/page-hero";
 import { Section } from "@/components/ministry/section";
 import { damaged } from "@/content/damaged";
 import { formatDate } from "@/lib/utils";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/gather")({ component: GatherPage });
 
@@ -12,7 +13,7 @@ function GatherPage() {
     <>
       <PageHero
         compact
-        image="/images/damaged-circle.jpg"
+        image={asset("/images/damaged-circle.jpg")}
         kicker="Gather"
         title="The Damaged Table"
         body="A monthly in-person sitting in Nassau County. Twelve chairs. Scripture, silence, a meal. No fog machine."

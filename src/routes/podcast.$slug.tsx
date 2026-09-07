@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { damaged } from "@/content/damaged";
 import { formatDate } from "@/lib/utils";
+import { asset } from "@/lib/asset";
 
 export const Route = createFileRoute("/podcast/$slug")({
   component: EpisodePage,
@@ -27,7 +28,7 @@ function EpisodePage() {
       </Button>
       <div className="flex flex-col gap-6 sm:flex-row">
         <img
-          src="/images/podcast-cover.jpg"
+          src={asset("/images/podcast-cover.jpg")}
           alt="The Damaged Table"
           className="w-40 rounded-lg object-cover"
           crossOrigin="anonymous"
