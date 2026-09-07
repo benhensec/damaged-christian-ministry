@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-Cltr0gcK.js";import{r as t}from"./asset-CTU6cqQd.js";var n=e();function r({className:e,children:r}){return(0,n.jsx)(`span`,{className:t(`inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-medium tracking-wide text-muted`,e),children:r})}export{r as t};
